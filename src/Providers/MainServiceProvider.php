@@ -13,11 +13,11 @@ class MainServiceProvider extends ServiceProvider
     public function register()
     {
         $this->getApplication()->register(MainRouteServiceProvider::class);
-        $this->getApplication()->register(
+        $this->getApplication()->bind(
             JSONPlaceholderRepositoryContract::class,
             JSONPlaceholderRepository::class
         );
-        $this->getApplication()->register(
+        $this->getApplication()->bind(
             PackagistRepositoryContract::class,
             PackagistRepository::class
         );
