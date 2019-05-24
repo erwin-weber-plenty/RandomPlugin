@@ -1,0 +1,11 @@
+{
+  "name":"RandomPlugin",
+  "description":"A random plugin",
+  "namespace":"RandomPlugin",
+  "author":"Erwin Weber",
+  "type":"template",
+  "serviceProvider":"RandomPlugin\\Providers\\MainServiceProvider",
+  "dependencies" : {
+    "guzzlehttp/guzzle": "6.2.*"
+  }
+}

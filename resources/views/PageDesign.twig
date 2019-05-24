@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+
+    <title>Random plugin</title>
+
+    <!-- CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="header">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="/posts">Posts</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/comments">Comments</a>
+        </li>
+    </ul>
+</div>
+<div id="page-body">
+    {% block PageBody %}
+
+    {% endblock %}
+</div>
+</body>
+</html>

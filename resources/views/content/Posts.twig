@@ -1,0 +1,19 @@
+{% extends "RandomPlugin::PageDesign" %}
+
+{% block PageBody %}
+
+    <h1>Posts</h1>
+
+    <ul>
+    {% for post in posts.results %}
+        <li>
+            <b>{{ post.title }}</b>
+            </br>
+            <i>{{ post.body }}</i>
+        </li>
+    {% else %}
+        <li>No entries</li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}
